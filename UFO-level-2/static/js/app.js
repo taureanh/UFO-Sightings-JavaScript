@@ -49,7 +49,7 @@ button.on("click", () => {
         {addData(filterDate);
     }
 
-    // Top if only works for filtering the date
+    //Create no sightings text
     
         else {
             $tbody.append("tr").append("td").text("No Sightings Here...Moving On....");

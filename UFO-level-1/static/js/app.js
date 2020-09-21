@@ -46,7 +46,8 @@ button.on("click", () => {
     if(response.filterDate.length !== 0) 
         {addData(filterDate);
     }
-    
+  
+    //Create no sightings text
         else {
             $tbody.append("tr").append("td").text("No Sightings Here...Moving On....");
         }
