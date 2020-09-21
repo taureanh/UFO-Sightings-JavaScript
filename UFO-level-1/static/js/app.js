@@ -4,7 +4,7 @@ var tableData = data;
 
 
 
-// Creating References
+// Create references
 var $tbody = d3.select("tbody");
 var button = d3.select("#filter-btn");
 var inputFieldDate = d3.select("#datetime");
@@ -17,7 +17,7 @@ var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes
 //console.log(inputFieldCity);
 //console.log(columns);
 
-// Inputing the data into the HTML
+// Input the data into the html 
 var addData = (dataInput) => {
     dataInput.forEach(ufoSightings => {
         var row = $tbody.append("tr");
@@ -29,8 +29,8 @@ var addData = (dataInput) => {
 addData(tableData);
 
 
-// Creating an Event Listener for the Button
-// Setting up the Filter Button for Date and City
+// Create an event listener for the button
+// Set up the filter button for date and city
 button.on("click", () => {
 
     d3.event.preventDefault();
@@ -39,17 +39,13 @@ button.on("click", () => {
 
     var filterDate = tableData.filter(tableData => tableData.datetime === inputDate);
     
-
     $tbody.html("");
 
     let response = {filterDate}
 
-
     if(response.filterDate.length !== 0) 
         {addData(filterDate);
     }
-
-    // Top if only works for filtering the date
     
         else {
             $tbody.append("tr").append("td").text("No Sightings Here...Moving On....");
