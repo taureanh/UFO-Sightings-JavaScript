@@ -1,7 +1,5 @@
 # JavaScript Homework - JavaScript and DOM Manipulation
 
-# Web Design Homework - Web Visualization Dashboard (Latitude)
-
 The objective of this homework is to create a basic HTML web page using the UFO dataset provided in the form of an array of JavaScript objects. We write code that appends a table to our web page and then adds new rows of data for each UFO sighting.
 
 
