@@ -21,8 +21,7 @@ var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes
 var addData = (dataInput) => {
     dataInput.forEach(ufoSightings => {
         var row = $tbody.append("tr");
-        columns.forEach(column => row.append("td").text(ufoSightings[column])
-        )
+        columns.forEach(column => row.append("td").text(ufoSightings[column]))
     });
 }
 
@@ -34,24 +33,24 @@ addData(tableData);
 button.on("click", () => {
 
     d3.event.preventDefault();
-    
+
     var inputDate = inputFieldDate.property("value").trim();
 
     var filterDate = tableData.filter(tableData => tableData.datetime === inputDate);
-    
+
     $tbody.html("");
 
-    let response = {filterDate}
-
-    if(response.filterDate.length !== 0) 
-        {addData(filterDate);
+    let response = {
+        filterDate
     }
-  
+
+    if (response.filterDate.length !== 0) {
+        addData(filterDate);
+    }
+
     //Create no sightings text
-        else {
-            $tbody.append("tr").append("td").text("No Sightings Here...Moving On....");
-        }
+    else {
+        $tbody.append("tr").append("td").text("No Sightings Here...Moving On....");
+    }
 })
-
-
 
