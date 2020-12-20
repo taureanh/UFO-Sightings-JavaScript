@@ -6,9 +6,6 @@ The objective of this homework is to create a basic HTML web page using the UFO 
 ![](javascript-challenge\UFO-level-1\images\pic1.png)
 
 
-![](javascript-challenge\UFO-level-1\images\pic2.png)
-
-
 Programs used:\
 HTML\
 CSS\
