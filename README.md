@@ -20,5 +20,3 @@ The objective of this homework is to create a basic HTML web page using the UFO 
 ## Requirements to run
 * Download folder and open in VS Code
 * Go live from index html file
-
-making vhanges
